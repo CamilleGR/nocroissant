@@ -1,35 +1,54 @@
 
-![Logo NOCROISSANT](./img/logo.png)
+<center>
+<img src="./img/logo.png" width="200"/>
+</center>
 
+# NOCROISSANT 🥐
 
-# NOCROISSANT 
+> **Croissantage** : Art subtil consistant à s'inviter à déjeuner aux frais d'un collègue qui a eu le malheur de ne pas verrouiller sa session.
 
-> Croissantage : Subtile art de s'inviter à déjeuner durant l'absence d'un collègue qui n'a pas verouillé sa session.
+---
 
+## C'est quoi ?
 
-NOCROISSANT est une protection anti-croissantage qui va surveiller les touches du clavier : si une touche est pressée il prend une photo avec la caméra frontale de la machine, l'enregistre, et lock la session. 
+NOCROISSANT est un gardien anti-croissantage discret qui surveille votre clavier en arrière-plan.
 
-Ainsi : 
-- Vous avez une preuve que votre collègue a essayé de vous croissanter. 
-- Vous n'aurez pas à ramener les croissants. 
+Dès qu'une touche est pressée sur votre machine non surveillée, il :
 
-Proposition subsidiaire : Envoyez la photo à vos collègues pour spécifier que la personne souhaite ramener les croissants pour tout le monde. 
+1. **Prend une photo** avec la caméra frontale
+2. **Enregistre la preuve** localement
+3. **Verrouille la session** immédiatement
 
-## Installation 
+Résultat : vous avez une photo du coupable, et c'est lui qui ramènera les croissants.
+
+> 💡 **Astuce** : Partagez la photo à vos collègues pour désigner publiquement le prochain fournisseur officiel de viennoiseries.
+
+---
+
+## Installation
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Lancement 
+---
 
-Sur windows, avec l'extension .pyw, il suffit de double-cliquer sur nocroissant.pyw. 
+## Utilisation
 
-Si vous optez pour une execution dans le terminal : 
-```
+### Sous Windows
+
+Double-cliquez sur `nocroissant.pyw` — aucune fenêtre de terminal n'apparaît, le programme tourne silencieusement.
+
+### En ligne de commande
+
+```bash
 python ./nocroissant.py
 ```
 
-## Arrêt 
+---
 
-Les signaux KILL sont interceptés pour éviter qu'un malotru essaie de contourner ce formidable système. Il suffit d'appuyer sur ECHAP pour quitter le programme. 
+## Arrêt
+
+Appuyez sur **`ÉCHAP`** pour quitter proprement.
+
+> ⚠️ Les signaux `KILL` sont interceptés — inutile d'essayer de contourner le système par ce biais.
